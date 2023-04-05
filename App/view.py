@@ -108,8 +108,9 @@ while True:
         print("Un area desconocida tiene el el numero 9999")
         intial_area = int(input("Area inicial: "))
         final_area = int(input("Area final: "))
-        total = controller.getCrimesByRangeArea(cont,intial_area,final_area)
+        total,tiempo = controller.getCrimesByRangeArea(cont,intial_area,final_area)
         print("\nTotal de crimenes en el rango de fechas: " + str(total))
+        print("Tiempo: " +str(tiempo) + " [ms]")
     else:
         sys.exit(0)
 sys.exit(0)

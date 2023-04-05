@@ -61,7 +61,7 @@ def newAnalyzer():
     analyzer["dateIndex"] = om.newMap(omaptype="RBT",
                                       comparefunction=compareDates)
     # TO DO lab 9, crear el indice ordenado por areas reportadas
-    analyzer["areaIndex"] = om.newMap(omaptype="RBT",
+    analyzer["areaIndex"] = om.newMap(omaptype="BST",
                                       comparefunction=compareDates)
     return analyzer
 

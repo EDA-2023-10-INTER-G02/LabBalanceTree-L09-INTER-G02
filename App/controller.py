@@ -165,7 +165,11 @@ def getCrimesByRangeArea(cont, initialArea, FinalArea):
     Retorna el total de crimenes en un rango de areas
     """
     # recuerde castear los parametros a int
-    return model.getCrimesByRangeArea(cont,initialArea,FinalArea)
+    time_i = getTime()
+    total = model.getCrimesByRangeArea(cont,initialArea,FinalArea)
+    time_f = getTime()
+    tiempo = deltaTime(time_f,time_i)
+    return total,tiempo
 
 
 # Funciones para medir tiempos de ejecucion
