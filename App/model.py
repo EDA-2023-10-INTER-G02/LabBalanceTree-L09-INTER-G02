@@ -365,9 +365,3 @@ def compareOffenses(offense1, offense2):
         return 1
     else:
         return -1
-
-mapa = om.newMap(omaptype='RBT')
-om.put(mapa,1,"chase atlantic")
-om.put(mapa,3,"bad bunny")
-om.put(mapa,5,"arcangel")
-print(om.values(mapa,1,5))
